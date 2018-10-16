@@ -1,0 +1,55 @@
+nav {
+  &.primary-nav {
+    .navbar-brand {
+      img {
+        max-width: 274px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .time-item,
+    .phone-item,
+    .location-item {
+      padding-right: 26px;
+      &__icon {
+        padding-right: 10px;
+        img {
+          max-width: 30px;
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__text {
+        p {
+          @include font("LatoRegular", 12px, 300, normal);
+          color: #000;
+          span {
+            color: #ff0606;
+          }
+        }
+      }
+    }
+    .location-item {
+      padding-right: 45px;
+    }
+    .action-item {
+      a.btn {
+        @include font("PTSans", 15px, 700, normal);
+        color: #fff;
+        border-radius: 19px;
+        background-color: #00ad5d;
+        padding: 10px 20px;
+      }
+    }
+  }
+  &.secondary-nav {
+    background-color: #00ad5d;
+    ul li {
+      a {
+        @include font("MyriadPro", 17px, 900, normal);
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+}

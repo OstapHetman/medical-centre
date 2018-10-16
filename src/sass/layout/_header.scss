@@ -1,0 +1,69 @@
+header {
+  min-height: 495px;
+  height: 100%;
+  #headerCarousel {
+    .carousel-indicators li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #c5c5c5;
+      &.active {
+        background-color: #fff;
+      }
+    }
+    i {
+      font-size: 80px;
+    }
+
+    .carousel-item {
+      img {
+        min-height: 495px;
+        height: 100%;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 9%;
+        left: 15%;
+        z-index: 10;
+        padding-top: 0;
+        padding-bottom: 0;
+        h5 {
+          @include font("Gilroy-ExtraBold", 50px, 900, normal);
+          color: #fff;
+          margin-bottom: 30px;
+        }
+        ul {
+          padding-left: 35px;
+          padding-bottom: 50px;
+          li {
+            @include font("MyriadPro", 27px, 600, normal);
+            line-height: 41px;
+            color: #fff;
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: -25px;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background-color: #d10505;
+            }
+            span {
+              color: #f40000;
+            }
+          }
+        }
+        button {
+          @include font("MyriadPro", 30px, 900, normal);
+          border-radius: 10px;
+          background-color: #00ad5d;
+          color: #fff;
+          padding: 7px 27px;
+        }
+      }
+    }
+  }
+}

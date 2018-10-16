@@ -21,3 +21,225 @@
 @font-face {
   font-family: "Gilroy-ExtraBold";
   src: url("../fonts/Gilroy-ExtraBold.otf") format("truetype"); }
+
+nav.primary-nav .navbar-brand img {
+  max-width: 274px;
+  width: 100%;
+  height: auto; }
+
+nav.primary-nav .time-item,
+nav.primary-nav .phone-item,
+nav.primary-nav .location-item {
+  padding-right: 26px; }
+  nav.primary-nav .time-item__icon,
+  nav.primary-nav .phone-item__icon,
+  nav.primary-nav .location-item__icon {
+    padding-right: 10px; }
+    nav.primary-nav .time-item__icon img,
+    nav.primary-nav .phone-item__icon img,
+    nav.primary-nav .location-item__icon img {
+      max-width: 30px;
+      width: 100%;
+      height: auto; }
+  nav.primary-nav .time-item__text p,
+  nav.primary-nav .phone-item__text p,
+  nav.primary-nav .location-item__text p {
+    font-family: "LatoRegular";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: #000; }
+    nav.primary-nav .time-item__text p span,
+    nav.primary-nav .phone-item__text p span,
+    nav.primary-nav .location-item__text p span {
+      color: #ff0606; }
+
+nav.primary-nav .location-item {
+  padding-right: 45px; }
+
+nav.primary-nav .action-item a.btn {
+  font-family: "PTSans";
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #fff;
+  border-radius: 19px;
+  background-color: #00ad5d;
+  padding: 10px 20px; }
+
+nav.secondary-nav {
+  background-color: #00ad5d; }
+  nav.secondary-nav ul li a {
+    font-family: "MyriadPro";
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #fff; }
+
+header {
+  min-height: 495px;
+  height: 100%; }
+  header #headerCarousel .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #c5c5c5; }
+    header #headerCarousel .carousel-indicators li.active {
+      background-color: #fff; }
+  header #headerCarousel i {
+    font-size: 80px; }
+  header #headerCarousel .carousel-item img {
+    min-height: 495px;
+    height: 100%; }
+  header #headerCarousel .carousel-item .carousel-caption {
+    position: absolute;
+    top: 9%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0; }
+    header #headerCarousel .carousel-item .carousel-caption h5 {
+      font-family: "Gilroy-ExtraBold";
+      font-size: 50px;
+      font-weight: 900;
+      letter-spacing: normal;
+      color: #fff;
+      margin-bottom: 30px; }
+    header #headerCarousel .carousel-item .carousel-caption ul {
+      padding-left: 35px;
+      padding-bottom: 50px; }
+      header #headerCarousel .carousel-item .carousel-caption ul li {
+        font-family: "MyriadPro";
+        font-size: 27px;
+        font-weight: 600;
+        letter-spacing: normal;
+        line-height: 41px;
+        color: #fff;
+        position: relative; }
+        header #headerCarousel .carousel-item .carousel-caption ul li:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -25px;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #d10505; }
+        header #headerCarousel .carousel-item .carousel-caption ul li span {
+          color: #f40000; }
+    header #headerCarousel .carousel-item .carousel-caption button {
+      font-family: "MyriadPro";
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: normal;
+      border-radius: 10px;
+      background-color: #00ad5d;
+      color: #fff;
+      padding: 7px 27px; }
+
+#our-services {
+  padding-top: 70px; }
+  #our-services h2 {
+    font-family: "LatoBold";
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: normal;
+    color: #00ad5d; }
+  #our-services .icons-col {
+    margin-top: 70px; }
+    #our-services .icons-col .icons-item {
+      padding: 15px 23px 23px 23px;
+      background-color: #f4f4f4;
+      box-shadow: 0 0 22px 5px rgba(253, 112, 112, 0.1); }
+      #our-services .icons-col .icons-item__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 185px; }
+        #our-services .icons-col .icons-item__icon img {
+          display: block;
+          max-width: 150px;
+          width: 100%; }
+      #our-services .icons-col .icons-item__title {
+        font-family: "LatoRegular";
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: #000;
+        padding: 0px 10px 25px 10px; }
+      #our-services .icons-col .icons-item__text {
+        font-family: "LatoLight";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: normal;
+        line-height: 18px;
+        color: #000;
+        padding-bottom: 25px; }
+      #our-services .icons-col .icons-item__action a {
+        font-family: "PTSans";
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: normal;
+        padding: 10px 25px;
+        color: #fff;
+        border-radius: 19px;
+        background-color: #00ad5d; }
+
+#about {
+  padding-top: 70px;
+  padding-bottom: 88px;
+  position: relative; }
+  #about:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 11px;
+    background-image: linear-gradient(-256deg, #00ad5d 0%, #00ad5d 14%, #ffffff 100%); }
+  #about h2 {
+    font-family: "LatoBold";
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: normal;
+    color: #00ad5d; }
+  #about .about-col {
+    margin-top: 75px; }
+    #about .about-col .about-item__icon {
+      margin-bottom: 25px; }
+      #about .about-col .about-item__icon img {
+        max-width: 100px; }
+    #about .about-col .about-item__text {
+      max-width: 180px;
+      margin: auto; }
+      #about .about-col .about-item__text p {
+        font-family: "LatoLight";
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: #00ad5d; }
+  #about .content {
+    margin-top: 80px; }
+    #about .content .left-col p {
+      font-family: "LatoLight";
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: normal;
+      line-height: 25px;
+      color: #000; }
+    #about .content .right-col .about-slider {
+      border: 7px solid #e6e6e6;
+      box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32); }
+      #about .content .right-col .about-slider .carousel-indicators li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #00a67d; }
+        #about .content .right-col .about-slider .carousel-indicators li.active {
+          background-color: #e6e6e6; }
+      #about .content .right-col .about-slider i {
+        font-size: 70px; }
