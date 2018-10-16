@@ -1,0 +1,58 @@
+.blog-page {
+  padding-bottom: 95px;
+  .breadcrumbs {
+    @include breadcrumbs;
+  }
+  h2 {
+    @include sectionTitle;
+    margin-top: 60px;
+  }
+  .news-col {
+    margin-top: 90px;
+    .news-item {
+      position: relative;
+      &__cover {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__text {
+        color: #000;
+        background-color: #f4f4f4;
+        padding: 20px 15px 50px 15px;
+        small {
+          @include font("LatoLight", 13px, 300, normal);
+          font-style: italic;
+          padding-left: 7px;
+          padding-bottom: 15px;
+        }
+        p {
+          @include font("Arial", 15px, 400, normal);
+        }
+      }
+      &__action {
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        a {
+          @include font("PTSans", 15px, 700, normal);
+          padding: 8px 40px;
+          color: #fff;
+          border-radius: 19px;
+          background-color: #00ad5d;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            @include hoverShadows;
+          }
+          &:focus {
+            box-shadow: unset;
+          }
+        }
+      }
+    }
+  }
+}
