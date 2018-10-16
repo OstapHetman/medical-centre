@@ -14,6 +14,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Latest compiled and minified FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Main Style-->
     <link rel="stylesheet" href="css/main.css">
     <!-- FavIcon -->
@@ -23,13 +25,665 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <h1>Лавка життя</h1>
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg py-2 py-xl-4 ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/home/header/brand.png" alt="brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbars" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-flex align-items-center justify-content-center pr-5">
+                        <div class="time-item__icon pr-2">
+                            <img src="img/home/header/clock.png" alt="icon">
+                        </div>
+                        <div class="time-item__text">
+                            <p class="mb-0">Пн. — Пт. 9:00 — 18:00</p>
+                            <p class="mb-0">СБ/ВС: Выходной</p>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex align-items-center justify-content-center pr-5">
+                        <div class="phone-item__icon pr-2">
+                            <img src="img/home/header/phone.png" alt="icon">
+                        </div>
+                        <div class="phone-item__text">
+                            <p class="mb-0">Неотложная помощь <span>24/7</span></p>
+                            <p class="mb-0">+38 (063) 423-96-66</p>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <div class="phone-item__icon pr-2">
+                            <img src="img/home/header/location.png" alt="icon">
+                        </div>
+                        <div class="phone-item__text">
+                            <p class="mb-0">г. Запорожье</p>
+                            <p class="mb-0">ул. Украинская 57А</p>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="btn">
+                            Записаться на прием
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbars collapse navbar-collapse">
+                <ul class="navbar-nav w-100 d-flex justify-content-lg-between justify-content-xl-between">
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#">транспортировка пациентов</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Скорая помощь</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Снятие интоксикации</a>
+                            <a class="dropdown-item" href="#">Вызов неотложной помощи</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#">Консультации</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
 
+    <!-- Start Header -->
+    <header>
+        <div class="container-fluid px-0">
+            <!-- START CAROUSEL -->
+            <div id="headerCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li class="active mr-3" data-target="#headerCarousel" data-slide-to="0"></li>
+                    <li class="mr-3" data-target="#headerCarousel" data-slide-to="1"></li>
+                    <li class="mr-3" data-target="#headerCarousel" data-slide-to="2"></li>
+                    <li data-target="#headerCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/home/header/slider.png" alt="First slide">
+                        <div class="carousel-caption text-left">
+                            <h5>Неотложная помощь на дому:</h5>
+                            <ul class="list-unstyled">
+                                <li>Снятие похмельного и интоксикационного</li>
+                                <li> Консультация узким специалистами с полным осмотром</li>
+                                <li>Забор анализов, ЭКГ</li>
+                                <li> Полная диагностика организма <span>(NEW)</span></li>
+                            </ul>
+                            <button type="button" class="btn main-btn">Связаться с нами</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/home/header/slider.png" alt="Second slide">
+                        <div class="carousel-caption text-left">
+                            <h5>Неотложная помощь на дому:</h5>
+                            <ul class="list-unstyled">
+                                <li>Снятие похмельного и интоксикационного</li>
+                                <li> Консультация узким специалистами с полным осмотром</li>
+                                <li>Забор анализов, ЭКГ</li>
+                                <li> Полная диагностика организма <span>(NEW)</span></li>
+                            </ul>
+                            <button type="button" class="btn main-btn">Связаться с нами</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/home/header/slider.png" alt="Third slide">
+                        <div class="carousel-caption text-left">
+                            <h5>Неотложная помощь на дому:</h5>
+                            <ul class="list-unstyled">
+                                <li>Снятие похмельного и интоксикационного</li>
+                                <li> Консультация узким специалистами с полным осмотром</li>
+                                <li>Забор анализов, ЭКГ</li>
+                                <li> Полная диагностика организма <span>(NEW)</span></li>
+                            </ul>
+                            <button type="button" class="btn main-btn">Связаться с нами</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/home/header/slider.png" alt="Fourth slide">
+                        <div class="carousel-caption text-left">
+                            <h5>Неотложная помощь на дому:</h5>
+                            <ul class="list-unstyled">
+                                <li>Снятие похмельного и интоксикационного</li>
+                                <li> Консультация узким специалистами с полным осмотром</li>
+                                <li>Забор анализов, ЭКГ</li>
+                                <li> Полная диагностика организма <span>(NEW)</span></li>
+                            </ul>
+                            <button type="button" class="btn main-btn">Связаться с нами</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- END CAROUSEL -->
+        </div>
+    </header>
+    <!-- End Header -->
 
+    <!-- Start SECTION: Our Services -->
+    <section id="our-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-0 text-center">Наши услуги</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 icons-col">
+                    <div class="icons-item">
+                        <div class="icons-item__icon text-center">
+                            <img src="img/home/services/icon_1.png" alt="Services icon">
+                        </div>
+                        <div class="icons-item__title">
+                            <h5 class="mb-0 text-center">Вызов неотложной помощи</h5>
+                        </div>
+                        <div class="icons-item__text">
+                            <p class="mb-0 text-center">
+                                Станции скорой медицинской
+                                помощи компании Лавка-Жизни
+                                находятся в Запорожье, Одессе,
+                                Черкассах и в Киеве..
+                            </p>
+                        </div>
+                        <div class="icons-item__action text-center">
+                            <a href="#" class="btn">Узнать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 icons-col">
+                    <div class="icons-item">
+                        <div class="icons-item__icon text-center">
+                            <img src="img/home/services/icon_2.png" alt="Services icon">
+                        </div>
+                        <div class="icons-item__title">
+                            <h5 class="mb-0 text-center">Транспортировка пациентов</h5>
+                        </div>
+                        <div class="icons-item__text">
+                            <p class="mb-0 text-center">
+                                Станции скорой медицинской
+                                помощи компании Лавка-Жизни
+                                находятся в Запорожье, Одессе,
+                                Черкассах и в Киеве..
+                            </p>
+                        </div>
+                        <div class="icons-item__action text-center">
+                            <a href="#" class="btn">Узнать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 icons-col">
+                    <div class="icons-item">
+                        <div class="icons-item__icon text-center">
+                            <img src="img/home/services/icon_3.png" alt="Services icon">
+                        </div>
+                        <div class="icons-item__title">
+                            <h5 class="mb-0 text-center">Консультация врачей</h5>
+                        </div>
+                        <div class="icons-item__text">
+                            <p class="mb-0 text-center">
+                                Станции скорой медицинской
+                                помощи компании Лавка-Жизни
+                                находятся в Запорожье, Одессе,
+                                Черкассах и в Киеве..
+                            </p>
+                        </div>
+                        <div class="icons-item__action text-center">
+                            <a href="#" class="btn">Узнать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 icons-col">
+                    <div class="icons-item">
+                        <div class="icons-item__icon text-center">
+                            <img src="img/home/services/icon_4.png" alt="Services icon">
+                        </div>
+                        <div class="icons-item__title">
+                            <h5 class="mb-0 text-center">Другие услуги</h5>
+                        </div>
+                        <div class="icons-item__text">
+                            <p class="mb-0 text-center">
+                                Станции скорой медицинской
+                                помощи компании Лавка-Жизни
+                                находятся в Запорожье, Одессе,
+                                Черкассах и в Киеве..
+                            </p>
+                        </div>
+                        <div class="icons-item__action text-center">
+                            <a href="#" class="btn">Узнать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+            </div>
+        </div>
+    </section>
+    <!-- End SECTION: Our Services -->
+
+    <!-- Start SECTION: About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-0 text-center">О клинике “Лавка-Жизни”</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 about-col">
+                    <div class="about-item">
+                        <div class="about-item__icon text-center">
+                            <img src="img/home/about/icon_1.png" alt="About Icon">
+                        </div>
+                        <div class="about-item__text">
+                            <p class="mb-0 text-center">
+                                Круглосуточная работа
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 about-col">
+                    <div class="about-item">
+                        <div class="about-item__icon text-center">
+                            <img src="img/home/about/icon_2.png" alt="About Icon">
+                        </div>
+                        <div class="about-item__text">
+                            <p class="mb-0 text-center">
+                                Опытные специалисты
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 about-col">
+                    <div class="about-item">
+                        <div class="about-item__icon text-center">
+                            <img src="img/home/about/icon_3.png" alt="About Icon">
+                        </div>
+                        <div class="about-item__text">
+                            <p class="mb-0 text-center">
+                                Доступные цены на услуги
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+            </div>
+            <div class="row justify-content-lg-between justify-content-xl-between align-items-center">
+                <!-- Start Left -->
+                <div class="col-md-6 col-lg-5 col-xl-5 left-col">
+                    <div class="about-text">
+                        <p class="text-justify mb-0">
+                            Компании компании компании компании компании
+                            компании,Компании компании компании компании
+                            компании компании,Компании компании компании
+                            компании компании компании,Компании Компании
+                            компании компании компании компании,Компании
+                            компании компании компании ,Компании Компании
+                            Компании компании компании компании компании
+                            компании,Компании Компании Компании Компании
+                            компании компании,Компании компании компании
+                            компании Компании Компании Компании компании
+                            компании компании компании,Компании компании,
+                            Компании Компании Компании компании компании
+                            компании компании Компании Компании Компании
+                        </p>
+                    </div>
+                </div>
+                <!-- Start Right -->
+
+                <div class="col-md-6 col-lg-5 col-xl-5 right-col">
+                    <div class="about-slider">
+                        <!-- Start Carousel -->
+                        <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#aboutCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#aboutCarousel" data-slide-to="1"></li>
+                                <li data-target="#aboutCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/home/about/slider.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/home/about/slider.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/home/about/slider.png" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- End Carousel -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End SECTION: About -->
+
+    <!-- Start SECTION: Last news -->
+    <section id="last-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-0 text-center">Последнии новости</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start Item -->
+                <div class="col-md-6 col-lg-4 col-xl-4 news-col">
+                    <div class="news-item">
+                        <div class="news-item__cover">
+                            <img class="w-100" src="img/home/about/slider.png" alt="Last news image">
+                        </div>
+                        <div class="news-item__text">
+                            <small class="d-block">13.08.2018</small>
+                            <p class="mb-0">
+                                Мы открылись, и доступны по адресу в
+                                Запорожье, обращайтесь!
+                            </p>
+                        </div>
+                        <div class="news-item__action text-center">
+                            <a href="#" class="btn">
+                                Читать далее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-md-6 col-lg-4 col-xl-4 news-col">
+                    <div class="news-item">
+                        <div class="news-item__cover">
+                            <img class="w-100" src="img/home/about/slider.png" alt="Last news image">
+                        </div>
+                        <div class="news-item__text">
+                            <small class="d-block">13.08.2018</small>
+                            <p class="mb-0">
+                                Мы открылись, и доступны по адресу в
+                                Запорожье, обращайтесь!
+                            </p>
+                        </div>
+                        <div class="news-item__action text-center">
+                            <a href="#" class="btn">
+                                Читать далее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-md-6 col-lg-4 col-xl-4 news-col">
+                    <div class="news-item">
+                        <div class="news-item__cover">
+                            <img class="w-100" src="img/home/about/slider.png" alt="Last news image">
+                        </div>
+                        <div class="news-item__text">
+                            <small class="d-block">13.08.2018</small>
+                            <p class="mb-0">
+                                Мы открылись, и доступны по адресу в
+                                Запорожье, обращайтесь!
+                            </p>
+                        </div>
+                        <div class="news-item__action text-center">
+                            <a href="#" class="btn">
+                                Читать далее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item -->
+            </div>
+        </div>
+    </section>
+    <!-- End SECTION: Last news -->
+
+    <!-- Start SECTION: Consultation -->
+    <section id="consultation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-0 text-center">
+                        БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-8">
+                    <!-- Start Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4 col-xl-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваше имя">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-xl-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваш номер телефона">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-xl-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваш Email-адрес">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <input class="btn" type="submit" value="Получить бесплатную консультацию">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End Form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End SECTION: Consultation -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 brand">
+                    <img src="img/home/header/brand.png" alt="Logo">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start Item -->
+                <div class="col-lg-3 col-xl-3">
+                    <!-- Start Item -->
+                    <div class="phone-item d-flex align-items-center">
+                        <div class="icon">
+                            <img src="img/home/footer/phone.png" alt="Phone Icon">
+                        </div>
+                        <div class="text">
+                            <p class="mb-0">Неотложная помощь <span>24/7</span></p>
+                            <a href="tel:+38(063)423-96-66">+38 (063) 423-96-66</a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+
+                    <!-- Start Item -->
+                    <div class="phone-item d-flex align-items-center">
+                        <div class="icon">
+                            <img src="img/home/footer/phone.png" alt="Phone Icon">
+                        </div>
+                        <div class="text">
+                            <p class="mb-0">Неотложная помощь</p>
+                            <a href="tel:+38 (061) 701-53-15">+38 (061) 701-53-15</a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+
+                    <!-- Start Item -->
+                    <div class="phone-item d-flex align-items-center">
+                        <div class="icon">
+                            <img src="img/home/footer/phone.png" alt="Phone Icon">
+                        </div>
+                        <div class="text">
+                            <p class="mb-0">Неотложная помощь</p>
+                            <a href="tel:+38 (050) 341-80-17">+38 (050) 341-80-17</a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+
+                    <!-- Start Item -->
+                    <div class="phone-item d-flex align-items-center">
+                        <div class="icon">
+                            <img src="img/home/footer/phone.png" alt="Phone Icon">
+                        </div>
+                        <div class="text">
+                            <p class="mb-0">Неотложная помощь</p>
+                            <a href="tel:+38 (050) 341-80-17">+38 (050) 341-80-17</a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-lg-3 col-xl-3">
+                    <ul class="mb-0 list-unstyled">
+                        <li>
+                            <a href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О центре
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Наши новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Наши контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-lg-3 col-xl-3">
+                    <ul class="mb-0 list-unstyled">
+                        <li>
+                            <a href="#">
+                                Скорая мед. помощь
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Транспортировка пациентов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Консультация врачей
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Другие услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Item -->
+
+                <!-- Start Item -->
+                <div class="col-lg-3 col-xl-3">
+                    <ul class="list-unstyled mb-0">
+                        <li>Почта:</li>
+                        <li><a href="mailto:aaaa@gmail.com">aaaa@gmail.com</a></li>
+                        <li>
+                            Мы в FaceBook:
+                            <a href="https://www.facebook.com">
+                                <img src="img/home/footer/facebook.png" alt="Social Icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">
+                        Обратная связь
+                    </a>
+                </div>
+                <!-- End Item -->
+            </div>
+        </div>
+        <!-- Start Bottom Footer -->
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-1">2018 © ООО “Лавка Жизни”. Все права защищены.</p>
+                        <p class="mb-0">Разработка сайта <a href="http://mark-lab.biz/">“Mark-Lab”</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bottom Footer -->
+    </footer>
+    <!-- End Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
