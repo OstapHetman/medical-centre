@@ -12,3 +12,15 @@
   @include font("LatoBold", 50px, 900, normal);
   color: #00ad5d;
 }
+@mixin breadcrumbs {
+  ul {
+    li {
+      a {
+        @include font("LatoBold", 15px, 900, 0.75px);
+        color: #a0a1a2;
+      }
+    }
+  }
+
+  background-color: #f4f4f4;
+}
