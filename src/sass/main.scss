@@ -14,8 +14,25 @@
 @import "layout/header";
 @import "layout/our-services";
 @import "layout/about";
+@import "layout/news";
+@import "layout/consultation";
 @import "layout/footer";
 // ======================= //
 // ===== Pages Folder====== //
 @import "pages/home";
 // ======================= //
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #00ad5d;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #f1f1f1;
+  border-radius: 10px;
+}

@@ -1,0 +1,91 @@
+footer {
+  background-color: #f6f6f6;
+  padding-top: 25px;
+  .brand-row {
+    padding-bottom: 28px;
+  }
+  .phone-item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .icon {
+      padding-right: 10px;
+      img {
+        width: 100%;
+        max-width: 30px;
+        height: auto;
+      }
+    }
+    .text {
+      p,
+      a {
+        @include font("LatoLight", 14px, 300, normal);
+        color: #000;
+        transition: color 0.7s ease-in-out;
+        span {
+          color: #ff0606;
+          font-weight: bold;
+        }
+      }
+      a:hover {
+        color: #ff0606;
+        text-decoration: none;
+      }
+    }
+  }
+  ul {
+    li {
+      padding-bottom: 10px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    li,
+    a {
+      @include font("LatoRegular", 16px, 300, 0.8px);
+      color: #00ad5d;
+      transition: all 0.7s ease-in-out;
+      img {
+        margin-left: 15px;
+        transition: all 0.7s ease-in-out;
+      }
+    }
+    a:hover {
+      color: #ff0606;
+      text-decoration: none;
+      img {
+        transform: scale(1.1);
+        box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+      }
+    }
+  }
+  a.btn {
+    @include font("PTSans", 17px, 700, 0.8px);
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 19px;
+    background-color: #22b892;
+    margin-top: 55px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      @include hoverShadows;
+    }
+  }
+  .bottom-footer {
+    margin-top: 25px;
+    padding: 15px 0;
+    background-color: #eeeeee;
+    p,
+    a {
+      @include font("PTSans", 17px, 400, normal);
+      color: #5e5e5e;
+      transition: color 0.5s ease-in-out;
+    }
+    a:hover {
+      text-decoration: unset;
+      color: #dd221c;
+    }
+  }
+}

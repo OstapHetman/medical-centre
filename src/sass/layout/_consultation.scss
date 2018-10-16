@@ -1,0 +1,46 @@
+#consultation {
+  background: url("../img/home/consultation/consultation.png");
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  h2 {
+    @include font("PTSans", 60px, bold, normal);
+    color: #fff;
+    padding-bottom: 65px;
+  }
+  form {
+    input[type="text"] {
+      @include font("LatoRegular", 15px, 300, 0.75px);
+      color: #000;
+      border-radius: 10px;
+      background-color: #ffffff;
+      padding: 25px 18px;
+      &::placeholder {
+        @include font("LatoRegular", 15px, 300, 0.75px);
+        color: #000;
+      }
+      &:focus {
+        box-shadow: unset;
+        border-color: #00ad5d;
+      }
+    }
+    input[type="submit"] {
+      @include font("LatoRegular", 26px, 700, 1.05px);
+      padding: 12px 30px;
+      margin-top: 50px;
+      color: #fff;
+      border-radius: 10px;
+      background-color: #00ad5d;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        @include hoverShadows;
+        opacity: 1;
+      }
+      &:focus {
+        box-shadow: unset;
+      }
+    }
+  }
+}

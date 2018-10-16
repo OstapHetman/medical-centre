@@ -4,6 +4,10 @@
   font-weight: $font-weight;
   letter-spacing: $letter-spaicng;
 }
+@mixin hoverShadows {
+  box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32);
+  opacity: 0.8;
+}
 @mixin sectionTitle {
   @include font("LatoBold", 50px, 900, normal);
   color: #00ad5d;
