@@ -55,4 +55,27 @@
       }
     }
   }
+  @media screen and (max-width: 767px) {
+    .news-col {
+      margin-top: 60px;
+    }
+    .news-col:first-child {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+    .news-col {
+      .news-item {
+        &__text {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }

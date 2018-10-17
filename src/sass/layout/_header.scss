@@ -35,6 +35,7 @@ header {
         ul {
           padding-left: 35px;
           padding-bottom: 50px;
+          min-height: 225px;
           li {
             @include font("MyriadPro", 27px, 600, normal);
             line-height: 41px;

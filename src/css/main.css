@@ -22,6 +22,40 @@
   font-family: "Gilroy-ExtraBold";
   src: url("../fonts/Gilroy-ExtraBold.otf") format("truetype"); }
 
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0px;
+  right: 10px; }
+  .scrolltop .scroll {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    background: #22b892;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+    .scrolltop .scroll:hover {
+      box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12); }
+    .scrolltop .scroll .fa {
+      font-size: 30px;
+      color: white;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; }
+
+@media screen and (max-width: 575px) {
+  .scrolltop .scroll {
+    bottom: 100px; } }
+
 .hover-underline:after {
   content: "";
   position: absolute;
@@ -144,7 +178,8 @@ header {
       margin-bottom: 30px; }
     header #headerCarousel .carousel-item .carousel-caption ul {
       padding-left: 35px;
-      padding-bottom: 50px; }
+      padding-bottom: 50px;
+      min-height: 225px; }
       header #headerCarousel .carousel-item .carousel-caption ul li {
         font-family: "MyriadPro";
         font-size: 27px;
@@ -488,34 +523,45 @@ footer {
   .services-page .breadcrumbs {
     padding: 15px 0;
     background-color: #f4f4f4; }
-    .services-page .breadcrumbs ul li {
-      margin-bottom: 0;
-      padding-left: 20px;
-      position: relative; }
-      .services-page .breadcrumbs ul li:last-child:after {
-        display: none; }
-      .services-page .breadcrumbs ul li:after {
-        content: ">";
-        position: absolute;
-        right: -26%;
-        top: 0;
-        color: #00a67d;
-        font-family: "LatoRegular";
-        font-size: 15px;
-        font-weight: 900;
-        letter-spacing: 0.75px; }
-      .services-page .breadcrumbs ul li:first-child {
-        padding-left: 0; }
-      .services-page .breadcrumbs ul li a {
-        font-family: "LatoBold";
-        font-size: 15px;
-        font-weight: 900;
-        letter-spacing: 0.75px;
-        color: #a0a1a2;
-        transition: all 0.5s ease-in-out; }
-        .services-page .breadcrumbs ul li a:hover {
+    .services-page .breadcrumbs ul {
+      align-items: center;
+      text-align: center; }
+      .services-page .breadcrumbs ul li {
+        margin-bottom: 0;
+        padding-left: 20px;
+        position: relative; }
+        .services-page .breadcrumbs ul li:last-child:after {
+          display: none; }
+        .services-page .breadcrumbs ul li:after {
+          content: ">";
+          position: absolute;
+          right: -15px;
+          top: 0;
           color: #00a67d;
-          text-decoration: unset; }
+          font-family: "LatoRegular";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px; }
+        .services-page .breadcrumbs ul li:first-child {
+          padding-left: 0; }
+        .services-page .breadcrumbs ul li a {
+          font-family: "LatoBold";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px;
+          color: #a0a1a2;
+          transition: all 0.5s ease-in-out; }
+          .services-page .breadcrumbs ul li a:hover {
+            color: #00a67d;
+            text-decoration: unset; }
+      @media screen and (max-width: 575px) {
+        .services-page .breadcrumbs ul li {
+          padding-left: 10px; }
+          .services-page .breadcrumbs ul li:after {
+            font-size: 11px;
+            right: -9px; }
+          .services-page .breadcrumbs ul li a {
+            font-size: 11px; } }
   .services-page h1 {
     font-family: "LatoLight";
     font-size: 50px;
@@ -551,7 +597,8 @@ footer {
     letter-spacing: normal;
     line-height: 18px;
     color: #000;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    text-align: justify; }
   .services-page a.btn {
     font-family: "MyriadPro";
     font-size: 30px;
@@ -569,40 +616,86 @@ footer {
       opacity: 1; }
     .services-page a.btn:focus {
       box-shadow: unset; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .services-page h1 {
+      font-size: 36px;
+      margin: 30px 0; }
+    .services-page .services-slider {
+      margin-bottom: 30px; }
+      .services-page .services-slider .carousel-indicators {
+        bottom: -30px; }
+        .services-page .services-slider .carousel-indicators li {
+          width: 10px;
+          height: 10px; }
+      .services-page .services-slider i {
+        font-size: 55px; }
+    .services-page a.btn {
+      font-size: 26px; } }
+  @media screen and (max-width: 575px) {
+    .services-page h1 {
+      font-size: 28px;
+      margin: 30px 0; }
+    .services-page .services-slider {
+      margin-bottom: 30px; }
+      .services-page .services-slider .carousel-indicators {
+        bottom: -30px; }
+        .services-page .services-slider .carousel-indicators li {
+          width: 8px;
+          height: 8px; }
+      .services-page .services-slider i {
+        font-size: 40px; }
+    .services-page p,
+    .services-page ul,
+    .services-page li,
+    .services-page h5 {
+      font-size: 14px; }
+    .services-page a.btn {
+      font-size: 18px; } }
 
 .blog-page {
   padding-bottom: 95px; }
   .blog-page .breadcrumbs {
     padding: 15px 0;
     background-color: #f4f4f4; }
-    .blog-page .breadcrumbs ul li {
-      margin-bottom: 0;
-      padding-left: 20px;
-      position: relative; }
-      .blog-page .breadcrumbs ul li:last-child:after {
-        display: none; }
-      .blog-page .breadcrumbs ul li:after {
-        content: ">";
-        position: absolute;
-        right: -26%;
-        top: 0;
-        color: #00a67d;
-        font-family: "LatoRegular";
-        font-size: 15px;
-        font-weight: 900;
-        letter-spacing: 0.75px; }
-      .blog-page .breadcrumbs ul li:first-child {
-        padding-left: 0; }
-      .blog-page .breadcrumbs ul li a {
-        font-family: "LatoBold";
-        font-size: 15px;
-        font-weight: 900;
-        letter-spacing: 0.75px;
-        color: #a0a1a2;
-        transition: all 0.5s ease-in-out; }
-        .blog-page .breadcrumbs ul li a:hover {
+    .blog-page .breadcrumbs ul {
+      align-items: center;
+      text-align: center; }
+      .blog-page .breadcrumbs ul li {
+        margin-bottom: 0;
+        padding-left: 20px;
+        position: relative; }
+        .blog-page .breadcrumbs ul li:last-child:after {
+          display: none; }
+        .blog-page .breadcrumbs ul li:after {
+          content: ">";
+          position: absolute;
+          right: -15px;
+          top: 0;
           color: #00a67d;
-          text-decoration: unset; }
+          font-family: "LatoRegular";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px; }
+        .blog-page .breadcrumbs ul li:first-child {
+          padding-left: 0; }
+        .blog-page .breadcrumbs ul li a {
+          font-family: "LatoBold";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px;
+          color: #a0a1a2;
+          transition: all 0.5s ease-in-out; }
+          .blog-page .breadcrumbs ul li a:hover {
+            color: #00a67d;
+            text-decoration: unset; }
+      @media screen and (max-width: 575px) {
+        .blog-page .breadcrumbs ul li {
+          padding-left: 10px; }
+          .blog-page .breadcrumbs ul li:after {
+            font-size: 11px;
+            right: -9px; }
+          .blog-page .breadcrumbs ul li a {
+            font-size: 11px; } }
   .blog-page h2 {
     font-family: "LatoBold";
     font-size: 50px;
@@ -656,6 +749,17 @@ footer {
             opacity: 0.8; }
           .blog-page .news-col .news-item__action a:focus {
             box-shadow: unset; }
+  @media screen and (max-width: 767px) {
+    .blog-page .news-col {
+      margin-top: 60px; }
+    .blog-page .news-col:first-child {
+      margin-top: 30px; } }
+  @media screen and (max-width: 575px) {
+    .blog-page h2 {
+      font-size: 28px;
+      margin-top: 30px; }
+    .blog-page .news-col .news-item__text p {
+      font-size: 14px; } }
 
 .single-page {
   padding-bottom: 100px; }
@@ -663,34 +767,45 @@ footer {
     padding: 15px 0;
     background-color: #f4f4f4;
     margin-bottom: 50px; }
-    .single-page .breadcrumbs ul li {
-      margin-bottom: 0;
-      padding-left: 20px;
-      position: relative; }
-      .single-page .breadcrumbs ul li:last-child:after {
-        display: none; }
-      .single-page .breadcrumbs ul li:after {
-        content: ">";
-        position: absolute;
-        right: -26%;
-        top: 0;
-        color: #00a67d;
-        font-family: "LatoRegular";
-        font-size: 15px;
-        font-weight: 900;
-        letter-spacing: 0.75px; }
-      .single-page .breadcrumbs ul li:first-child {
-        padding-left: 0; }
-      .single-page .breadcrumbs ul li a {
-        font-family: "LatoBold";
-        font-size: 15px;
-        font-weight: 900;
-        letter-spacing: 0.75px;
-        color: #a0a1a2;
-        transition: all 0.5s ease-in-out; }
-        .single-page .breadcrumbs ul li a:hover {
+    .single-page .breadcrumbs ul {
+      align-items: center;
+      text-align: center; }
+      .single-page .breadcrumbs ul li {
+        margin-bottom: 0;
+        padding-left: 20px;
+        position: relative; }
+        .single-page .breadcrumbs ul li:last-child:after {
+          display: none; }
+        .single-page .breadcrumbs ul li:after {
+          content: ">";
+          position: absolute;
+          right: -15px;
+          top: 0;
           color: #00a67d;
-          text-decoration: unset; }
+          font-family: "LatoRegular";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px; }
+        .single-page .breadcrumbs ul li:first-child {
+          padding-left: 0; }
+        .single-page .breadcrumbs ul li a {
+          font-family: "LatoBold";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px;
+          color: #a0a1a2;
+          transition: all 0.5s ease-in-out; }
+          .single-page .breadcrumbs ul li a:hover {
+            color: #00a67d;
+            text-decoration: unset; }
+      @media screen and (max-width: 575px) {
+        .single-page .breadcrumbs ul li {
+          padding-left: 10px; }
+          .single-page .breadcrumbs ul li:after {
+            font-size: 11px;
+            right: -9px; }
+          .single-page .breadcrumbs ul li a {
+            font-size: 11px; } }
   .single-page .post-title {
     background-color: #f7f7f7;
     padding: 40px 0; }
@@ -755,6 +870,73 @@ footer {
       left: 5%; }
     .single-page .post-text a.next {
       right: 5%; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .single-page .post-title {
+      padding: 25px 10px; }
+      .single-page .post-title h1 {
+        font-size: 25px; }
+    .single-page .post-text {
+      padding: 25px 25px; }
+      .single-page .post-text p,
+      .single-page .post-text ul,
+      .single-page .post-text li,
+      .single-page .post-text span,
+      .single-page .post-text small,
+      .single-page .post-text a {
+        font-family: "LatoLight";
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.75px; }
+      .single-page .post-text a.next,
+      .single-page .post-text a.previous {
+        font-size: 14px;
+        padding: 8px 10px;
+        bottom: -18px; }
+      .single-page .post-text a.previous {
+        left: 5%; }
+      .single-page .post-text a.next {
+        right: 5%; } }
+  @media screen and (max-width: 575px) {
+    .single-page .post-title {
+      padding: 15px 10px; }
+      .single-page .post-title h1 {
+        font-size: 18px;
+        line-height: 24px; }
+    .single-page .post-text {
+      padding: 20px 10px; }
+      .single-page .post-text h1,
+      .single-page .post-text h2,
+      .single-page .post-text h3,
+      .single-page .post-text h4,
+      .single-page .post-text h5,
+      .single-page .post-text h6 {
+        font-size: 19px; }
+      .single-page .post-text p,
+      .single-page .post-text ul,
+      .single-page .post-text li,
+      .single-page .post-text span,
+      .single-page .post-text small,
+      .single-page .post-text a {
+        font-family: "LatoLight";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.75px; }
+      .single-page .post-text a.next,
+      .single-page .post-text a.previous {
+        font-size: 12px;
+        padding: 8px 10px; }
+      .single-page .post-text a.previous {
+        left: 0%; }
+      .single-page .post-text a.next {
+        right: 0%; } }
+
+body,
+html {
+  overflow-x: hidden; }
+
+body {
+  max-width: 1920px;
+  margin: auto; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {

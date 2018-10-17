@@ -24,7 +24,15 @@
 @import "pages/blog";
 @import "pages/single";
 // ======================= //
+body,
+html {
+  overflow-x: hidden;
+}
 
+body {
+  max-width: 1920px;
+  margin: auto;
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
