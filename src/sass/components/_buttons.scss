@@ -10,6 +10,7 @@
     right: 20px;
     bottom: 50px;
     background: #22b892;
+    border-radius: 5px;
     padding: 5px 10px 5px 10px;
     text-align: center;
     margin: 0 0 0 0;
@@ -24,10 +25,6 @@
     .fa {
       font-size: 30px;
       color: white;
-      transition: 0.5s;
-      -moz-transition: 0.5s;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
     }
   }
 }

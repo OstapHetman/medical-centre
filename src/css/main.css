@@ -34,6 +34,7 @@
     right: 20px;
     bottom: 50px;
     background: #22b892;
+    border-radius: 5px;
     padding: 5px 10px 5px 10px;
     text-align: center;
     margin: 0 0 0 0;
@@ -46,11 +47,7 @@
       box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 0, 0, 0.12); }
     .scrolltop .scroll .fa {
       font-size: 30px;
-      color: white;
-      transition: 0.5s;
-      -moz-transition: 0.5s;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s; }
+      color: white; }
 
 @media screen and (max-width: 575px) {
   .scrolltop .scroll {
@@ -71,6 +68,180 @@
 .hover-underline:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left; }
+
+.mainModals.show {
+  display: flex !important;
+  background: rgba(0, 0, 0, 0.7); }
+  .mainModals.show .modal-dialog {
+    margin: auto; }
+
+.mainModals .modal-header {
+  border-bottom: unset;
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 0; }
+  .mainModals .modal-header button {
+    color: #00a67d;
+    opacity: 1;
+    font-family: "LatoBold";
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    position: absolute;
+    right: 25px;
+    top: 10px; }
+    .mainModals .modal-header button:hover {
+      color: #00a67d !important; }
+    .mainModals .modal-header button:focus {
+      outline: unset; }
+
+.mainModals .modal-content {
+  border-radius: 9px;
+  border: unset; }
+
+.mainModals .modal-body {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 475px; }
+  .mainModals .modal-body h1 {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: normal;
+    color: #00a67d;
+    line-height: 30px;
+    margin-bottom: 15px; }
+  .mainModals .modal-body p {
+    margin-bottom: 25px; }
+  .mainModals .modal-body form input:focus {
+    outline: unset;
+    box-shadow: unset; }
+  .mainModals .modal-body form textarea {
+    resize: none; }
+  .mainModals .modal-body form input[type="text"],
+  .mainModals .modal-body form textarea {
+    background-color: #f3f2f2;
+    border: unset;
+    border-radius: 10px;
+    padding: 25px 16px;
+    margin-top: 35px;
+    font-family: "Lato";
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #3b3a3a;
+    margin: 0 auto; }
+    .mainModals .modal-body form input[type="text"]:focus,
+    .mainModals .modal-body form textarea:focus {
+      box-shadow: 0 0 0 0.2rem rgba(1, 162, 97, 0.32); }
+    .mainModals .modal-body form input[type="text"]::-webkit-input-placeholder,
+    .mainModals .modal-body form textarea::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+    .mainModals .modal-body form input[type="text"]::-moz-placeholder,
+    .mainModals .modal-body form textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+    .mainModals .modal-body form input[type="text"]:-ms-input-placeholder,
+    .mainModals .modal-body form textarea:-ms-input-placeholder {
+      /* IE 10+ */
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+    .mainModals .modal-body form input[type="text"]:-moz-placeholder,
+    .mainModals .modal-body form textarea:-moz-placeholder {
+      /* Firefox 18- */
+      font-family: "Lato";
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #3b3a3a; }
+  .mainModals .modal-body input[type="submit"] {
+    font-family: "MyriadPro";
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: normal;
+    background-color: #00a67d;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    transition: opacity 0.7s ease-in-out;
+    box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32); }
+    .mainModals .modal-body input[type="submit"]:hover {
+      opacity: 0.8; }
+
+@media screen and (max-width: 575px) {
+  .mainModals .modal-header {
+    padding-top: 50px; }
+  .mainModals .modal-body {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .mainModals .modal-body h1 {
+      font-family: "Gilroy-ExtraBold";
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: normal;
+      line-height: unset;
+      margin-bottom: 15px; }
+    .mainModals .modal-body p {
+      font-size: 12px; }
+    .mainModals .modal-body form input[type="text"] {
+      padding: 20px 15px;
+      margin-top: 0px;
+      font-family: "Lato";
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #3b3a3a;
+      margin: 0 auto; }
+      .mainModals .modal-body form input[type="text"]::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3b3a3a; }
+      .mainModals .modal-body form input[type="text"]::-moz-placeholder {
+        /* Firefox 19+ */
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3b3a3a; }
+      .mainModals .modal-body form input[type="text"]:-ms-input-placeholder {
+        /* IE 10+ */
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3b3a3a; }
+      .mainModals .modal-body form input[type="text"]:-moz-placeholder {
+        /* Firefox 18- */
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3b3a3a; }
+    .mainModals .modal-body input[type="submit"] {
+      font-family: "MyriadPro";
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: normal; } }
 
 nav.primary-nav .navbar-brand img {
   max-width: 274px;
