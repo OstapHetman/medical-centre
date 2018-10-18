@@ -1,0 +1,63 @@
+#price-list-page {
+  padding-bottom: 50px;
+  .breadcrumbs {
+    @include breadcrumbs;
+  }
+  h1 {
+    @include font("LatoLight", 50px, 900, normal);
+    color: #00ad5d;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  h2 {
+    @include font("LatoLight", 36px, 900, normal);
+    color: #00ad5d;
+    margin-bottom: 50px;
+  }
+  // Start Table
+  table.table-bordered {
+    border: 4px solid#00ad5d;
+    box-shadow: 0 0 30px 0.5px rgba(0, 173, 93, 0.2),
+      0 0 35px 0.5px rgba(0, 173, 93, 0.2) inset;
+    thead {
+      @include font("LatoRegular", 28px, 600, normal);
+      color: #00ad5d;
+      border-bottom: 4px solid#00ad5d;
+      th {
+        border: 2px solid#00ad5d;
+      }
+    }
+    tbody {
+      td {
+        @include font("LatoLight", 16px, 600, normal);
+        border: 2px solid#00ad5d;
+        &.price {
+          @include font("LatoRegular", 16px, 900, normal);
+          color: #00ad5d;
+        }
+      }
+      tr.colspan-row {
+        td {
+          @include font("LatoRegular", 19px, 900, normal);
+        }
+      }
+    }
+  }
+  // End Table
+  a.btn {
+    @include font("MyriadPro", 30px, 900, normal);
+    border-radius: 10px;
+    background-color: #00ad5d;
+    color: #fff;
+    margin-top: 25px;
+    padding: 7px 27px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      @include hoverShadows;
+      opacity: 0.8;
+    }
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+}

@@ -62,7 +62,7 @@
         transition: all 0.5s ease-in-out;
         &:hover {
           @include hoverShadows;
-          opacity: 1;
+          opacity: 0.8;
         }
         &:focus {
           box-shadow: unset;

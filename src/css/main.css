@@ -1191,7 +1191,7 @@ footer {
     #contacts-page .contacts__button a:hover {
       box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32);
       opacity: 0.8;
-      opacity: 1; }
+      opacity: 0.8; }
     #contacts-page .contacts__button a:focus {
       box-shadow: unset; }
   @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1225,6 +1225,112 @@ footer {
           color: #00a67d; }
           #contacts-page .contacts__info ul li ul li a {
             color: #00a67d; } }
+
+#price-list-page {
+  padding-bottom: 50px; }
+  #price-list-page .breadcrumbs {
+    padding: 15px 0;
+    background-color: #f4f4f4; }
+    #price-list-page .breadcrumbs ul {
+      align-items: center;
+      text-align: center; }
+      #price-list-page .breadcrumbs ul li {
+        margin-bottom: 0;
+        padding-left: 20px;
+        position: relative; }
+        #price-list-page .breadcrumbs ul li:last-child:after {
+          display: none; }
+        #price-list-page .breadcrumbs ul li:after {
+          content: ">";
+          position: absolute;
+          right: -15px;
+          top: 0;
+          color: #00a67d;
+          font-family: "LatoRegular";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px; }
+        #price-list-page .breadcrumbs ul li:first-child {
+          padding-left: 0; }
+        #price-list-page .breadcrumbs ul li a {
+          font-family: "LatoBold";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px;
+          color: #a0a1a2;
+          transition: all 0.5s ease-in-out; }
+          #price-list-page .breadcrumbs ul li a:hover {
+            color: #00a67d;
+            text-decoration: unset; }
+      @media screen and (max-width: 575px) {
+        #price-list-page .breadcrumbs ul li {
+          padding-left: 10px; }
+          #price-list-page .breadcrumbs ul li:after {
+            font-size: 11px;
+            right: -9px; }
+          #price-list-page .breadcrumbs ul li a {
+            font-size: 11px; } }
+  #price-list-page h1 {
+    font-family: "LatoLight";
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: normal;
+    color: #00ad5d;
+    margin-top: 50px;
+    margin-bottom: 0; }
+  #price-list-page h2 {
+    font-family: "LatoLight";
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: normal;
+    color: #00ad5d;
+    margin-bottom: 50px; }
+  #price-list-page table.table-bordered {
+    border: 4px solid #00ad5d;
+    box-shadow: 0 0 30px 0.5px rgba(0, 173, 93, 0.2), 0 0 35px 0.5px rgba(0, 173, 93, 0.2) inset; }
+    #price-list-page table.table-bordered thead {
+      font-family: "LatoRegular";
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #00ad5d;
+      border-bottom: 4px solid #00ad5d; }
+      #price-list-page table.table-bordered thead th {
+        border: 2px solid #00ad5d; }
+    #price-list-page table.table-bordered tbody td {
+      font-family: "LatoLight";
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: normal;
+      border: 2px solid #00ad5d; }
+      #price-list-page table.table-bordered tbody td.price {
+        font-family: "LatoRegular";
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: normal;
+        color: #00ad5d; }
+    #price-list-page table.table-bordered tbody tr.colspan-row td {
+      font-family: "LatoRegular";
+      font-size: 19px;
+      font-weight: 900;
+      letter-spacing: normal; }
+  #price-list-page a.btn {
+    font-family: "MyriadPro";
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: normal;
+    border-radius: 10px;
+    background-color: #00ad5d;
+    color: #fff;
+    margin-top: 25px;
+    padding: 7px 27px;
+    transition: all 0.5s ease-in-out; }
+    #price-list-page a.btn:hover {
+      box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32);
+      opacity: 0.8;
+      opacity: 0.8; }
+    #price-list-page a.btn:focus {
+      box-shadow: unset; }
 
 body,
 html {
