@@ -1,0 +1,129 @@
+#contacts-page {
+  $bg-clr: #fff;
+  $main-text-clr: #000;
+  $btn-bg: #00a67d;
+  $links-clr: #00a67d;
+
+  padding-bottom: 65px;
+  background-color: $bg-clr;
+
+  .breadcrumbs {
+    @include breadcrumbs;
+  }
+  h1 {
+    @include sectionTitle;
+    $text-clr: #00a67d;
+    padding: 56px 0;
+    @media screen and (max-width: 576px) {
+      padding: 25px 0;
+      font-size: 28px;
+    }
+  }
+  iframe {
+    box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32);
+  }
+  .contacts {
+    &__info {
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          img {
+            max-width: 48px;
+          }
+          ul {
+            padding-left: 15px;
+            li {
+              font-family: "Lato", sans-serif;
+              font-weight: bold;
+              font-size: 20px;
+              letter-spacing: 1px;
+              color: $links-clr;
+              a {
+                color: $links-clr;
+                transition: all 0.7s ease-in-out;
+                &:hover {
+                  color: #ff0606;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__button {
+      a {
+        @include font("MyriadPro", 30px, 900, 0.73px);
+        border-radius: 10px;
+        background-color: #00ad5d;
+        color: #fff;
+        padding: 7px 27px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          @include hoverShadows;
+          opacity: 1;
+        }
+        &:focus {
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .contacts {
+      &__info {
+        ul {
+          li {
+            img {
+              max-width: 30px;
+            }
+            ul {
+              padding-left: 15px;
+              li {
+                font-family: "Lato", sans-serif;
+                font-weight: bold;
+                font-size: 15px;
+                letter-spacing: 1px;
+                color: $links-clr;
+                a {
+                  color: $links-clr;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &__info {
+        ul {
+          li {
+            img {
+              max-width: 30px;
+            }
+            ul {
+              padding-left: 15px;
+              li {
+                font-family: "Lato", sans-serif;
+                font-weight: bold;
+                font-size: 15px;
+                letter-spacing: 1px;
+                color: $links-clr;
+                a {
+                  color: $links-clr;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

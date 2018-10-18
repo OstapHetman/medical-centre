@@ -1101,6 +1101,131 @@ footer {
       .single-page .post-text a.next {
         right: 0%; } }
 
+#contacts-page {
+  padding-bottom: 65px;
+  background-color: #fff; }
+  #contacts-page .breadcrumbs {
+    padding: 15px 0;
+    background-color: #f4f4f4; }
+    #contacts-page .breadcrumbs ul {
+      align-items: center;
+      text-align: center; }
+      #contacts-page .breadcrumbs ul li {
+        margin-bottom: 0;
+        padding-left: 20px;
+        position: relative; }
+        #contacts-page .breadcrumbs ul li:last-child:after {
+          display: none; }
+        #contacts-page .breadcrumbs ul li:after {
+          content: ">";
+          position: absolute;
+          right: -15px;
+          top: 0;
+          color: #00a67d;
+          font-family: "LatoRegular";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px; }
+        #contacts-page .breadcrumbs ul li:first-child {
+          padding-left: 0; }
+        #contacts-page .breadcrumbs ul li a {
+          font-family: "LatoBold";
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0.75px;
+          color: #a0a1a2;
+          transition: all 0.5s ease-in-out; }
+          #contacts-page .breadcrumbs ul li a:hover {
+            color: #00a67d;
+            text-decoration: unset; }
+      @media screen and (max-width: 575px) {
+        #contacts-page .breadcrumbs ul li {
+          padding-left: 10px; }
+          #contacts-page .breadcrumbs ul li:after {
+            font-size: 11px;
+            right: -9px; }
+          #contacts-page .breadcrumbs ul li a {
+            font-size: 11px; } }
+  #contacts-page h1 {
+    font-family: "LatoBold";
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: normal;
+    color: #00ad5d;
+    padding: 56px 0; }
+    @media screen and (max-width: 576px) {
+      #contacts-page h1 {
+        padding: 25px 0;
+        font-size: 28px; } }
+  #contacts-page iframe {
+    box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32); }
+  #contacts-page .contacts__info ul li {
+    display: flex;
+    align-items: center; }
+    #contacts-page .contacts__info ul li img {
+      max-width: 48px; }
+    #contacts-page .contacts__info ul li ul {
+      padding-left: 15px; }
+      #contacts-page .contacts__info ul li ul li {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #00a67d; }
+        #contacts-page .contacts__info ul li ul li a {
+          color: #00a67d;
+          transition: all 0.7s ease-in-out; }
+          #contacts-page .contacts__info ul li ul li a:hover {
+            color: #ff0606;
+            text-decoration: none; }
+  #contacts-page .contacts__button a {
+    font-family: "MyriadPro";
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.73px;
+    border-radius: 10px;
+    background-color: #00ad5d;
+    color: #fff;
+    padding: 7px 27px;
+    transition: all 0.5s ease-in-out; }
+    #contacts-page .contacts__button a:hover {
+      box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32);
+      opacity: 0.8;
+      opacity: 1; }
+    #contacts-page .contacts__button a:focus {
+      box-shadow: unset; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #contacts-page .contacts__info ul li img {
+      max-width: 30px; }
+    #contacts-page .contacts__info ul li ul {
+      padding-left: 15px; }
+      #contacts-page .contacts__info ul li ul li {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #00a67d; }
+        #contacts-page .contacts__info ul li ul li a {
+          color: #00a67d; } }
+  @media screen and (max-width: 767px) {
+    #contacts-page .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #contacts-page .contacts__info ul li img {
+        max-width: 30px; }
+      #contacts-page .contacts__info ul li ul {
+        padding-left: 15px; }
+        #contacts-page .contacts__info ul li ul li {
+          font-family: "Lato", sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          letter-spacing: 1px;
+          color: #00a67d; }
+          #contacts-page .contacts__info ul li ul li a {
+            color: #00a67d; } }
+
 body,
 html {
   overflow-x: hidden; }

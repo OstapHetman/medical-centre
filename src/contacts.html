@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#4de3bd" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="author" content="mark-Lab.biz">
+  <title>Лавка Життя &raquo; Контакты</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Latest compiled and minified FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Main Style-->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- FavIcon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+  <main id="contacts-page">
+    <!-- Start breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="list-unstyled mb-0 d-flex">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End breadcrumbs -->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <h1 class="text-center mb-0 section-title">Контакты</h1>
+        </div>
+        <div class="col-md-5 col-lg-4 contacts">
+          <div class="contacts__info">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-4 mb-md-5 mb-lg-5 mb-xl-5">
+                <img src="img/contacts/geo.png" alt="icon">
+                <ul class="list-unstyled mb-0">
+                  <li>Мед. центр в г. Запорожье</li>
+                  <li>Украинская улица, 57А</li>
+                </ul>
+              </li>
+
+              <li class="mb-4 mb-md-5 mb-lg-5 mb-xl-5">
+                <img src="img/contacts/phone.png" alt="icon">
+                <ul class="list-unstyled mb-0">
+                  <li>Неотложная помощь:</li>
+                  <li><a href="tel:+38 (000) 000-00-00">+38 (063) 423-96-66</a></li>
+                  <li><a href="tel:+38 (000) 000-00-00">+38 (061) 701-53-15</a></li>
+                  <li><a href="tel:+38 (000) 000-00-00">+38 (050) 341-80-17</a></li>
+                  <li><a href="tel:+38 (000) 000-00-00">+38 (050) 341-80-17</a></li>
+                </ul>
+              </li>
+
+              <li class="mb-4 mb-md-5 mb-lg-5 mb-xl-5">
+                <img src="img/contacts/mail.png" alt="icon">
+                <ul class="list-unstyled mb-0">
+                  <li>Email:</li>
+                  <li><a href="mailto:+38 (000) 000-00-00">lavka-zhizni@gmail.com</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__button mt-0 mt-md-5 mt-lg-5 mt-xl-5 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
+            <a href="#" class="btn" data-toggle="modal" data-target="#helpModal">Связаться с
+              нами</a>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6 offset-lg-2">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.507767413691!2d35.160345215195534!3d47.82975568052948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc675577c81c6d%3A0x52d26cc77e79653a!2zNTdBLCDQstGD0LvQuNGG0Y8g0KPQutGA0LDRl9C90YHRjNC60LAsIDU30JAsINCX0LDQv9C-0YDRltC20LbRjywg0JfQsNC_0L7RgNGW0LfRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY5MDAw!5e0!3m2!1suk!2sua!4v1539847682717"
+            width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- Start Modal: Связаться с нами -->
+  <div class="modal fade mainModals" id="helpModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h1 class="text-center">
+              Нужна помощь ?
+            </h1>
+            <p class="text-center">Введите ваше имя и номер телефона, специалист компании свяжется
+              с вами и ответит на ваши вопросы</p>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="2" placeholder="Введите Вашe сообщение"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="hidden" id="hiddenInput">
+              </div>
+              <div class="form-group text-center">
+                <input class="btn" type="submit" value="Оставить заявку">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal: Связаться с нами -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
