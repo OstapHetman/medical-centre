@@ -1037,11 +1037,12 @@ footer {
       text-align: center; }
       .services-page .breadcrumbs ul li {
         margin-bottom: 0;
-        padding-left: 20px;
-        position: relative; }
-        .services-page .breadcrumbs ul li:last-child:after {
+        padding-left: 20px; }
+        .services-page .breadcrumbs ul li a {
+          position: relative; }
+        .services-page .breadcrumbs ul li:last-child a:after {
           display: none; }
-        .services-page .breadcrumbs ul li:after {
+        .services-page .breadcrumbs ul li a:after {
           content: ">";
           position: absolute;
           right: -15px;
@@ -1066,11 +1067,12 @@ footer {
       @media screen and (max-width: 575px) {
         .services-page .breadcrumbs ul li {
           padding-left: 10px; }
-          .services-page .breadcrumbs ul li:after {
-            font-size: 11px;
-            right: -9px; }
           .services-page .breadcrumbs ul li a {
-            font-size: 11px; } }
+            font-size: 11px; }
+            .services-page .breadcrumbs ul li a:after {
+              font-size: 11px;
+              top: -2px;
+              right: -9px; } }
   .services-page h1 {
     font-family: "LatoLight";
     font-size: 50px;
@@ -1171,11 +1173,12 @@ footer {
       text-align: center; }
       .blog-page .breadcrumbs ul li {
         margin-bottom: 0;
-        padding-left: 20px;
-        position: relative; }
-        .blog-page .breadcrumbs ul li:last-child:after {
+        padding-left: 20px; }
+        .blog-page .breadcrumbs ul li a {
+          position: relative; }
+        .blog-page .breadcrumbs ul li:last-child a:after {
           display: none; }
-        .blog-page .breadcrumbs ul li:after {
+        .blog-page .breadcrumbs ul li a:after {
           content: ">";
           position: absolute;
           right: -15px;
@@ -1200,11 +1203,12 @@ footer {
       @media screen and (max-width: 575px) {
         .blog-page .breadcrumbs ul li {
           padding-left: 10px; }
-          .blog-page .breadcrumbs ul li:after {
-            font-size: 11px;
-            right: -9px; }
           .blog-page .breadcrumbs ul li a {
-            font-size: 11px; } }
+            font-size: 11px; }
+            .blog-page .breadcrumbs ul li a:after {
+              font-size: 11px;
+              top: -2px;
+              right: -9px; } }
   .blog-page h2 {
     font-family: "LatoBold";
     font-size: 50px;
@@ -1289,11 +1293,12 @@ footer {
       text-align: center; }
       .single-page .breadcrumbs ul li {
         margin-bottom: 0;
-        padding-left: 20px;
-        position: relative; }
-        .single-page .breadcrumbs ul li:last-child:after {
+        padding-left: 20px; }
+        .single-page .breadcrumbs ul li a {
+          position: relative; }
+        .single-page .breadcrumbs ul li:last-child a:after {
           display: none; }
-        .single-page .breadcrumbs ul li:after {
+        .single-page .breadcrumbs ul li a:after {
           content: ">";
           position: absolute;
           right: -15px;
@@ -1318,11 +1323,12 @@ footer {
       @media screen and (max-width: 575px) {
         .single-page .breadcrumbs ul li {
           padding-left: 10px; }
-          .single-page .breadcrumbs ul li:after {
-            font-size: 11px;
-            right: -9px; }
           .single-page .breadcrumbs ul li a {
-            font-size: 11px; } }
+            font-size: 11px; }
+            .single-page .breadcrumbs ul li a:after {
+              font-size: 11px;
+              top: -2px;
+              right: -9px; } }
   .single-page .post-title {
     background-color: #f7f7f7;
     padding: 40px 0; }
@@ -1458,11 +1464,12 @@ footer {
       text-align: center; }
       #contacts-page .breadcrumbs ul li {
         margin-bottom: 0;
-        padding-left: 20px;
-        position: relative; }
-        #contacts-page .breadcrumbs ul li:last-child:after {
+        padding-left: 20px; }
+        #contacts-page .breadcrumbs ul li a {
+          position: relative; }
+        #contacts-page .breadcrumbs ul li:last-child a:after {
           display: none; }
-        #contacts-page .breadcrumbs ul li:after {
+        #contacts-page .breadcrumbs ul li a:after {
           content: ">";
           position: absolute;
           right: -15px;
@@ -1487,11 +1494,12 @@ footer {
       @media screen and (max-width: 575px) {
         #contacts-page .breadcrumbs ul li {
           padding-left: 10px; }
-          #contacts-page .breadcrumbs ul li:after {
-            font-size: 11px;
-            right: -9px; }
           #contacts-page .breadcrumbs ul li a {
-            font-size: 11px; } }
+            font-size: 11px; }
+            #contacts-page .breadcrumbs ul li a:after {
+              font-size: 11px;
+              top: -2px;
+              right: -9px; } }
   #contacts-page h1 {
     font-family: "LatoBold";
     font-size: 50px;
@@ -1596,11 +1604,12 @@ footer {
       text-align: center; }
       #price-list-page .breadcrumbs ul li {
         margin-bottom: 0;
-        padding-left: 20px;
-        position: relative; }
-        #price-list-page .breadcrumbs ul li:last-child:after {
+        padding-left: 20px; }
+        #price-list-page .breadcrumbs ul li a {
+          position: relative; }
+        #price-list-page .breadcrumbs ul li:last-child a:after {
           display: none; }
-        #price-list-page .breadcrumbs ul li:after {
+        #price-list-page .breadcrumbs ul li a:after {
           content: ">";
           position: absolute;
           right: -15px;
@@ -1625,11 +1634,12 @@ footer {
       @media screen and (max-width: 575px) {
         #price-list-page .breadcrumbs ul li {
           padding-left: 10px; }
-          #price-list-page .breadcrumbs ul li:after {
-            font-size: 11px;
-            right: -9px; }
           #price-list-page .breadcrumbs ul li a {
-            font-size: 11px; } }
+            font-size: 11px; }
+            #price-list-page .breadcrumbs ul li a:after {
+              font-size: 11px;
+              top: -2px;
+              right: -9px; } }
   #price-list-page h1 {
     font-family: "LatoLight";
     font-size: 50px;

@@ -29,19 +29,26 @@
     li {
       margin-bottom: 0;
       padding-left: 20px;
-      position: relative;
+
+      a {
+        position: relative;
+      }
       &:last-child {
-        &:after {
-          display: none;
+        a {
+          &:after {
+            display: none;
+          }
         }
       }
-      &:after {
-        content: ">";
-        position: absolute;
-        right: -15px;
-        top: 0;
-        color: #00a67d;
-        @include font("LatoRegular", 15px, 900, 0.75px);
+      a {
+        &:after {
+          content: ">";
+          position: absolute;
+          right: -15px;
+          top: 0;
+          color: #00a67d;
+          @include font("LatoRegular", 15px, 900, 0.75px);
+        }
       }
       &:first-child {
         padding-left: 0;
@@ -59,12 +66,14 @@
     @media screen and (max-width: 575px) {
       li {
         padding-left: 10px;
-        &:after {
-          font-size: 11px;
-          right: -9px;
-        }
+
         a {
           font-size: 11px;
+          &:after {
+            font-size: 11px;
+            top: -2px;
+            right: -9px;
+          }
         }
       }
     }
