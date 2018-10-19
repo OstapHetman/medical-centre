@@ -36,7 +36,7 @@
             li {
               font-family: "Lato", sans-serif;
               font-weight: bold;
-              font-size: 20px;
+              font-size: 19px;
               letter-spacing: 1px;
               color: $links-clr;
               a {
@@ -96,6 +96,13 @@
       }
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    a.btn {
+      font-size: 26px;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .contacts {
       display: flex;
@@ -124,6 +131,12 @@
           }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    a.btn {
+      font-size: 18px;
     }
   }
 }

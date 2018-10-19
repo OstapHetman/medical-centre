@@ -1523,7 +1523,7 @@ footer {
       #contacts-page .contacts__info ul li ul li {
         font-family: "Lato", sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 19px;
         letter-spacing: 1px;
         color: #00a67d; }
         #contacts-page .contacts__info ul li ul li a {
@@ -1561,6 +1561,9 @@ footer {
         color: #00a67d; }
         #contacts-page .contacts__info ul li ul li a {
           color: #00a67d; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #contacts-page a.btn {
+      font-size: 26px; } }
   @media screen and (max-width: 767px) {
     #contacts-page .contacts {
       display: flex;
@@ -1579,6 +1582,9 @@ footer {
           color: #00a67d; }
           #contacts-page .contacts__info ul li ul li a {
             color: #00a67d; } }
+  @media screen and (max-width: 575px) {
+    #contacts-page a.btn {
+      font-size: 18px; } }
 
 #price-list-page {
   padding-bottom: 50px; }
@@ -1685,6 +1691,87 @@ footer {
       opacity: 0.8; }
     #price-list-page a.btn:focus {
       box-shadow: unset; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #price-list-page h1 {
+      font-size: 36px; }
+    #price-list-page h2 {
+      font-size: 28px; }
+    #price-list-page table.table-bordered thead {
+      font-family: "LatoRegular";
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: normal; }
+    #price-list-page table.table-bordered tbody td {
+      font-family: "LatoLight";
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: normal; }
+      #price-list-page table.table-bordered tbody td.price {
+        font-family: "LatoRegular";
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: normal; }
+    #price-list-page table.table-bordered tbody tr.colspan-row td {
+      font-family: "LatoRegular";
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: normal; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #price-list-page h1 {
+      font-size: 36px; }
+    #price-list-page h2 {
+      font-size: 26px; }
+    #price-list-page table.table-bordered thead {
+      font-family: "LatoRegular";
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: normal; }
+    #price-list-page table.table-bordered tbody td {
+      vertical-align: middle;
+      font-family: "LatoLight";
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: normal; }
+      #price-list-page table.table-bordered tbody td.price {
+        font-family: "LatoRegular";
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: normal; }
+    #price-list-page table.table-bordered tbody tr.colspan-row td {
+      font-family: "LatoRegular";
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: normal; } }
+  @media screen and (max-width: 575px) {
+    #price-list-page h1 {
+      font-size: 32px;
+      margin-top: 25px; }
+    #price-list-page h2 {
+      font-size: 22px;
+      margin-bottom: 25px; }
+    #price-list-page table.table-bordered thead {
+      font-family: "LatoRegular";
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: normal; }
+    #price-list-page table.table-bordered tbody td {
+      vertical-align: middle;
+      font-family: "LatoLight";
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: normal; }
+      #price-list-page table.table-bordered tbody td.price {
+        font-family: "LatoRegular";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: normal; }
+    #price-list-page table.table-bordered tbody tr.colspan-row td {
+      font-family: "LatoRegular";
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: normal; }
+    #price-list-page a.btn {
+      font-size: 18px; } }
 
 body,
 html {

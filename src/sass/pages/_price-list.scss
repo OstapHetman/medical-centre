@@ -60,4 +60,98 @@
       box-shadow: unset;
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    // Start Table
+    table.table-bordered {
+      thead {
+        @include font("LatoRegular", 25px, 600, normal);
+      }
+      tbody {
+        td {
+          @include font("LatoLight", 15px, 600, normal);
+          &.price {
+            @include font("LatoRegular", 15px, 900, normal);
+          }
+        }
+        tr.colspan-row {
+          td {
+            @include font("LatoRegular", 18px, 900, normal);
+          }
+        }
+      }
+    }
+    // End Table
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    // Start Table
+    table.table-bordered {
+      thead {
+        @include font("LatoRegular", 22px, 600, normal);
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          @include font("LatoLight", 15px, 600, normal);
+          &.price {
+            @include font("LatoRegular", 15px, 900, normal);
+          }
+        }
+        tr.colspan-row {
+          td {
+            @include font("LatoRegular", 18px, 900, normal);
+          }
+        }
+      }
+    }
+    // End Table
+  }
+
+  @media screen and (max-width: 575px) {
+    h1 {
+      font-size: 32px;
+      margin-top: 25px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+    // Start Table
+    table.table-bordered {
+      thead {
+        @include font("LatoRegular", 18px, 600, normal);
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          @include font("LatoLight", 14px, 600, normal);
+          &.price {
+            @include font("LatoRegular", 14px, 900, normal);
+          }
+        }
+        tr.colspan-row {
+          td {
+            @include font("LatoRegular", 14px, 900, normal);
+          }
+        }
+      }
+    }
+    // End Table
+    a.btn {
+      font-size: 18px;
+    }
+  }
 }
