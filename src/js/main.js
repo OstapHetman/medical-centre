@@ -19,3 +19,8 @@ $(function() {
     return false;
   });
 });
+
+// Burger btn
+$(".navbar-toggler").click(function() {
+  $(this).toggleClass("open");
+});

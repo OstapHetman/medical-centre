@@ -1,10 +1,21 @@
 nav {
   &.primary-nav {
     .navbar-brand {
+      z-index: 101;
       img {
         max-width: 274px;
         width: 100%;
         height: auto;
+      }
+    }
+    .navbar-toggler {
+      z-index: 101;
+      i {
+        color: #00ad5d;
+        font-size: 26px;
+      }
+      &:focus {
+        outline: none;
       }
     }
     .time-item,
@@ -48,7 +59,31 @@ nav {
         }
       }
     }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .navbar-brand {
+        img {
+          max-width: 180px;
+        }
+      }
+      .time-item,
+      .phone-item,
+      .location-item {
+        padding-right: 20px;
+        &__icon {
+          padding-right: 10px;
+          img {
+            max-width: 20px;
+          }
+        }
+        &__text {
+          p {
+            @include font("LatoRegular", 11px, 300, normal);
+          }
+        }
+      }
+    }
   }
+  // SECONDARY NAV
   &.secondary-nav {
     background-color: #00ad5d;
     ul li {
@@ -73,6 +108,70 @@ nav {
       .dropdown-item:hover {
         background-color: transparent;
         color: #f4f4f4;
+      }
+    }
+  }
+  // MAIN MEDIA
+  @media screen and (max-width: 991px) {
+    &.primary-nav {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+      .navbar-brand {
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+    &.secondary-nav {
+      padding: 0;
+    }
+    a.navbar-brand {
+      font-size: 32px;
+    }
+    ul {
+      li {
+        a {
+          text-align: center;
+          font-size: 17px;
+          &.btn {
+            font-size: 15px;
+            width: 50%;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .navbar-toggler.open {
+      position: fixed;
+      right: 24px;
+    }
+    .navbar-collapse {
+      background: rgba(255, 255, 255, 0.93);
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 100;
+      height: 100vh;
+      transition: all 0.2s ease-in;
+      ul {
+        transition: all 0.2s ease-in;
+        height: 100%;
+        justify-content: center;
+        li {
+          a {
+            color: #00ad5d;
+          }
+        }
+        .dropdown-menu {
+          background-color: unset;
+          border: unset;
+          padding: 0;
+          text-align: center;
+          a {
+            font-size: 14px;
+          }
+        }
       }
     }
   }

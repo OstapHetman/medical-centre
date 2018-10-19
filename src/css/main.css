@@ -243,10 +243,20 @@
       font-weight: 900;
       letter-spacing: normal; } }
 
-nav.primary-nav .navbar-brand img {
-  max-width: 274px;
-  width: 100%;
-  height: auto; }
+nav.primary-nav .navbar-brand {
+  z-index: 101; }
+  nav.primary-nav .navbar-brand img {
+    max-width: 274px;
+    width: 100%;
+    height: auto; }
+
+nav.primary-nav .navbar-toggler {
+  z-index: 101; }
+  nav.primary-nav .navbar-toggler i {
+    color: #00ad5d;
+    font-size: 26px; }
+  nav.primary-nav .navbar-toggler:focus {
+    outline: none; }
 
 nav.primary-nav .time-item,
 nav.primary-nav .phone-item,
@@ -294,6 +304,29 @@ nav.primary-nav .action-item a.btn {
   nav.primary-nav .action-item a.btn:focus {
     box-shadow: unset; }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  nav.primary-nav .navbar-brand img {
+    max-width: 180px; }
+  nav.primary-nav .time-item,
+  nav.primary-nav .phone-item,
+  nav.primary-nav .location-item {
+    padding-right: 20px; }
+    nav.primary-nav .time-item__icon,
+    nav.primary-nav .phone-item__icon,
+    nav.primary-nav .location-item__icon {
+      padding-right: 10px; }
+      nav.primary-nav .time-item__icon img,
+      nav.primary-nav .phone-item__icon img,
+      nav.primary-nav .location-item__icon img {
+        max-width: 20px; }
+    nav.primary-nav .time-item__text p,
+    nav.primary-nav .phone-item__text p,
+    nav.primary-nav .location-item__text p {
+      font-family: "LatoRegular";
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: normal; } }
+
 nav.secondary-nav {
   background-color: #00ad5d; }
   nav.secondary-nav ul li a {
@@ -317,6 +350,49 @@ nav.secondary-nav {
     nav.secondary-nav .dropdown-menu .dropdown-item:hover {
       background-color: transparent;
       color: #f4f4f4; }
+
+@media screen and (max-width: 991px) {
+  nav.primary-nav {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important; }
+    nav.primary-nav .navbar-brand img {
+      max-width: 150px; }
+  nav.secondary-nav {
+    padding: 0; }
+  nav a.navbar-brand {
+    font-size: 32px; }
+  nav ul li a {
+    text-align: center;
+    font-size: 17px; }
+    nav ul li a.btn {
+      font-size: 15px;
+      width: 50%;
+      margin: auto; }
+  nav .navbar-toggler.open {
+    position: fixed;
+    right: 24px; }
+  nav .navbar-collapse {
+    background: rgba(255, 255, 255, 0.93);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 100vh;
+    transition: all 0.2s ease-in; }
+    nav .navbar-collapse ul {
+      transition: all 0.2s ease-in;
+      height: 100%;
+      justify-content: center; }
+      nav .navbar-collapse ul li a {
+        color: #00ad5d; }
+      nav .navbar-collapse ul .dropdown-menu {
+        background-color: unset;
+        border: unset;
+        padding: 0;
+        text-align: center; }
+        nav .navbar-collapse ul .dropdown-menu a {
+          font-size: 14px; } }
 
 header {
   min-height: 495px;
@@ -371,7 +447,7 @@ header {
           background-color: #d10505; }
         header #headerCarousel .carousel-item .carousel-caption ul li span {
           color: #f40000; }
-    header #headerCarousel .carousel-item .carousel-caption button {
+    header #headerCarousel .carousel-item .carousel-caption a {
       font-family: "MyriadPro";
       font-size: 30px;
       font-weight: 900;
@@ -381,12 +457,72 @@ header {
       color: #fff;
       padding: 7px 27px;
       transition: all 0.5s ease-in-out; }
-      header #headerCarousel .carousel-item .carousel-caption button:hover {
+      header #headerCarousel .carousel-item .carousel-caption a:hover {
         box-shadow: 0 0 42px 4px rgba(1, 162, 97, 0.32);
         opacity: 0.8;
         opacity: 1; }
-      header #headerCarousel .carousel-item .carousel-caption button:focus {
+      header #headerCarousel .carousel-item .carousel-caption a:focus {
         box-shadow: unset; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    header #headerCarousel .carousel-item .carousel-caption h5 {
+      font-size: 45px; }
+    header #headerCarousel .carousel-item .carousel-caption ul li {
+      font-size: 25px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    header #headerCarousel .carousel-item .carousel-caption h5 {
+      font-size: 36px; }
+    header #headerCarousel .carousel-item .carousel-caption ul {
+      min-height: unset;
+      padding-bottom: 35px; }
+      header #headerCarousel .carousel-item .carousel-caption ul li {
+        font-size: 22px; }
+    header #headerCarousel .carousel-item .carousel-caption a {
+      font-size: 22px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    header {
+      min-height: 350px; }
+      header #headerCarousel .carousel-item img {
+        min-height: 350px; }
+      header #headerCarousel .carousel-item .carousel-caption h5 {
+        font-size: 28px; }
+      header #headerCarousel .carousel-item .carousel-caption ul {
+        min-height: unset;
+        padding-bottom: 20px; }
+        header #headerCarousel .carousel-item .carousel-caption ul li {
+          font-size: 18px;
+          line-height: 25px; }
+      header #headerCarousel .carousel-item .carousel-caption a {
+        padding: 7px 15px;
+        font-size: 16px; } }
+  @media screen and (max-width: 575px) {
+    header {
+      min-height: 280px; }
+      header #headerCarousel .carousel-indicators {
+        display: none; }
+      header #headerCarousel i.fa {
+        font-size: 45px; }
+      header #headerCarousel .carousel-item img {
+        min-height: 280px; }
+      header #headerCarousel .carousel-item .carousel-caption {
+        top: 13%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        header #headerCarousel .carousel-item .carousel-caption h5 {
+          font-size: 19px;
+          margin-bottom: 10px;
+          text-align: center; }
+        header #headerCarousel .carousel-item .carousel-caption ul {
+          min-height: unset;
+          padding-bottom: 5px; }
+          header #headerCarousel .carousel-item .carousel-caption ul li {
+            font-size: 14px;
+            line-height: unset; }
+        header #headerCarousel .carousel-item .carousel-caption a {
+          padding: 5px 10px;
+          font-size: 14px; } }
 
 #our-services {
   padding-top: 70px; }
@@ -396,6 +532,10 @@ header {
     font-weight: 900;
     letter-spacing: normal;
     color: #00ad5d; }
+    @media screen and (max-width: 575px) {
+      #our-services h2 {
+        font-size: 36px;
+        text-align: center; } }
   #our-services .icons-col {
     margin-top: 70px; }
     #our-services .icons-col .icons-item {
@@ -442,6 +582,56 @@ header {
           opacity: 0.8; }
         #our-services .icons-col .icons-item__action a:focus {
           box-shadow: unset; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #our-services .icons-col .icons-item {
+      padding: 15px 15px 15px 15px; }
+      #our-services .icons-col .icons-item__icon {
+        min-height: 150px; }
+        #our-services .icons-col .icons-item__icon img {
+          max-width: 125px; }
+      #our-services .icons-col .icons-item__title h5 {
+        font-size: 18px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #our-services .icons-col .icons-item {
+      padding: 15px 15px 15px 15px; }
+      #our-services .icons-col .icons-item__icon {
+        min-height: 120px; }
+        #our-services .icons-col .icons-item__icon img {
+          max-width: 100px; }
+      #our-services .icons-col .icons-item__title h5 {
+        font-size: 18px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #our-services {
+      padding-top: 40px; }
+      #our-services .icons-col {
+        margin-top: 40px; }
+        #our-services .icons-col .icons-item {
+          padding: 15px 15px 15px 15px; }
+          #our-services .icons-col .icons-item__icon {
+            min-height: 110px; }
+            #our-services .icons-col .icons-item__icon img {
+              max-width: 100px; }
+          #our-services .icons-col .icons-item__title {
+            padding: 0px 10px 15px 10px; }
+            #our-services .icons-col .icons-item__title h5 {
+              font-size: 18px; } }
+  @media screen and (max-width: 575px) {
+    #our-services {
+      padding-top: 40px; }
+      #our-services .icons-col {
+        margin-top: 40px; }
+        #our-services .icons-col .icons-item {
+          padding: 15px 15px 15px 15px; }
+          #our-services .icons-col .icons-item__icon {
+            min-height: 110px; }
+            #our-services .icons-col .icons-item__icon img {
+              max-width: 100px; }
+          #our-services .icons-col .icons-item__title {
+            padding: 0px 10px 15px 10px; }
+            #our-services .icons-col .icons-item__title h5 {
+              font-size: 18px; }
+              #our-services .icons-col .icons-item__title h5 br {
+                display: none; } }
 
 #about {
   padding-top: 70px;
@@ -461,6 +651,10 @@ header {
     font-weight: 900;
     letter-spacing: normal;
     color: #00ad5d; }
+    @media screen and (max-width: 575px) {
+      #about h2 {
+        font-size: 36px;
+        text-align: center; } }
   #about .about-col {
     margin-top: 75px; }
     #about .about-col .about-item__icon {
@@ -508,6 +702,10 @@ header {
     letter-spacing: normal;
     color: #00ad5d;
     margin-top: 45px; }
+    @media screen and (max-width: 575px) {
+      #last-news h2 {
+        font-size: 36px;
+        text-align: center; } }
   #last-news .news-col {
     margin-top: 60px; }
     #last-news .news-col .news-item {
@@ -874,6 +1072,10 @@ footer {
     letter-spacing: normal;
     color: #00ad5d;
     margin-top: 60px; }
+    @media screen and (max-width: 575px) {
+      .blog-page h2 {
+        font-size: 36px;
+        text-align: center; } }
   .blog-page .news-col {
     margin-top: 90px; }
     .blog-page .news-col .news-item {
@@ -1153,6 +1355,10 @@ footer {
     letter-spacing: normal;
     color: #00ad5d;
     padding: 56px 0; }
+    @media screen and (max-width: 575px) {
+      #contacts-page h1 {
+        font-size: 36px;
+        text-align: center; } }
     @media screen and (max-width: 576px) {
       #contacts-page h1 {
         padding: 25px 0;

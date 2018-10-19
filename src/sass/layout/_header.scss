@@ -57,7 +57,7 @@ header {
             }
           }
         }
-        button {
+        a {
           @include font("MyriadPro", 30px, 900, normal);
           border-radius: 10px;
           background-color: #00ad5d;
@@ -70,6 +70,114 @@ header {
           }
           &:focus {
             box-shadow: unset;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #headerCarousel {
+      .carousel-item {
+        .carousel-caption {
+          h5 {
+            font-size: 45px;
+          }
+          ul {
+            li {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #headerCarousel {
+      .carousel-item {
+        .carousel-caption {
+          h5 {
+            font-size: 36px;
+          }
+          ul {
+            min-height: unset;
+            padding-bottom: 35px;
+            li {
+              font-size: 22px;
+            }
+          }
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    min-height: 350px;
+    #headerCarousel {
+      .carousel-item {
+        img {
+          min-height: 350px;
+        }
+        .carousel-caption {
+          h5 {
+            font-size: 28px;
+          }
+          ul {
+            min-height: unset;
+            padding-bottom: 20px;
+            li {
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+          a {
+            padding: 7px 15px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    min-height: 280px;
+    #headerCarousel {
+      .carousel-indicators {
+        display: none;
+      }
+      i.fa {
+        font-size: 45px;
+      }
+      .carousel-item {
+        img {
+          min-height: 280px;
+        }
+        .carousel-caption {
+          top: 13%;
+          left: 10%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          h5 {
+            font-size: 19px;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          ul {
+            min-height: unset;
+            padding-bottom: 5px;
+            li {
+              font-size: 14px;
+              line-height: unset;
+            }
+          }
+          a {
+            padding: 5px 10px;
+            font-size: 14px;
           }
         }
       }
