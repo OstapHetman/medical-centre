@@ -532,9 +532,13 @@ header {
     font-weight: 900;
     letter-spacing: normal;
     color: #00ad5d; }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      #our-services h2 {
+        font-size: 42px;
+        text-align: center; } }
     @media screen and (max-width: 575px) {
       #our-services h2 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center; } }
   #our-services .icons-col {
     margin-top: 70px; }
@@ -651,9 +655,13 @@ header {
     font-weight: 900;
     letter-spacing: normal;
     color: #00ad5d; }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      #about h2 {
+        font-size: 42px;
+        text-align: center; } }
     @media screen and (max-width: 575px) {
       #about h2 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center; } }
   #about .about-col {
     margin-top: 75px; }
@@ -692,6 +700,58 @@ header {
           background-color: #e6e6e6; }
       #about .content .right-col .about-slider i {
         font-size: 70px; }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #about .content .left-col p {
+      font-size: 19px;
+      line-height: initial; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #about .about-col .about-item__icon img {
+      max-width: 80px; }
+    #about .about-col .about-item__text p {
+      line-height: 25px;
+      font-size: 20px; }
+    #about .content .left-col {
+      order: 2;
+      margin-top: 30px; }
+      #about .content .left-col p {
+        font-size: 19px;
+        line-height: initial; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #about .about-col .about-item__icon img {
+      max-width: 80px; }
+    #about .about-col .about-item__text p {
+      line-height: 25px;
+      font-size: 20px; }
+    #about .content .left-col {
+      order: 2;
+      margin-top: 30px; }
+      #about .content .left-col p {
+        font-size: 19px;
+        line-height: initial; } }
+  @media screen and (max-width: 575px) {
+    #about .about-col {
+      margin-top: 40px; }
+      #about .about-col .about-item__icon {
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0; }
+        #about .about-col .about-item__icon img {
+          max-width: 50px; }
+      #about .about-col .about-item__text p {
+        line-height: 25px;
+        font-size: 18px; }
+    #about .content .right-col .about-slider i {
+      font-size: 50px; }
+    #about .content .about-slider .carousel-indicators {
+      display: none; }
+    #about .content .left-col {
+      order: 2;
+      margin-top: 30px; }
+      #about .content .left-col p {
+        font-size: 16px;
+        line-height: initial; } }
 
 #last-news {
   padding-bottom: 125px; }
@@ -702,9 +762,13 @@ header {
     letter-spacing: normal;
     color: #00ad5d;
     margin-top: 45px; }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      #last-news h2 {
+        font-size: 42px;
+        text-align: center; } }
     @media screen and (max-width: 575px) {
       #last-news h2 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center; } }
   #last-news .news-col {
     margin-top: 60px; }
@@ -802,6 +866,44 @@ header {
       opacity: 1; }
     #consultation form input[type="submit"]:focus {
       box-shadow: unset; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #consultation h2 {
+      font-size: 45px; }
+    #consultation form input[type="submit"] {
+      font-size: 22px;
+      padding: 12px 25px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #consultation {
+      padding-top: 40px;
+      padding-bottom: 30px; }
+      #consultation h2 {
+        padding-bottom: 40px;
+        font-size: 36px; }
+      #consultation form input[type="submit"] {
+        margin-top: 30px;
+        font-size: 22px;
+        padding: 12px 25px; } }
+  @media screen and (max-width: 575px) {
+    #consultation {
+      padding-top: 30px;
+      padding-bottom: 20px; }
+      #consultation h2 {
+        padding-bottom: 25px;
+        font-size: 23px; }
+      #consultation form input[type="submit"] {
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 10px 10px; }
+      #consultation form input[type="text"] {
+        font-family: "LatoRegular";
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 0.75px; }
+        #consultation form input[type="text"]::placeholder {
+          font-family: "LatoRegular";
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: 0.75px; } }
 
 footer {
   background-color: #f6f6f6;
@@ -885,6 +987,44 @@ footer {
     footer .bottom-footer a:hover {
       text-decoration: unset;
       color: #dd221c; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    footer .brand {
+      text-align: center; }
+    footer .footer-row {
+      align-items: center; }
+    footer .col-md-4:last-child {
+      margin-top: 20px; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    footer .brand {
+      text-align: center; }
+    footer .footer-row {
+      align-items: center; }
+    footer .footer-col:first-child {
+      order: 4; }
+    footer .footer-col:nth-child(1),
+    footer .footer-col:nth-child(4) {
+      margin-top: 30px; } }
+  @media screen and (max-width: 575px) {
+    footer .brand-row {
+      padding: 0; }
+    footer .brand {
+      text-align: center; }
+      footer .brand img {
+        max-width: 200px; }
+    footer .footer-row {
+      align-items: center; }
+    footer .footer-col {
+      margin-top: 30px; }
+    footer .footer-col:last-child {
+      text-align: center; }
+    footer a.btn {
+      margin-top: 20px; }
+    footer .bottom-footer p,
+    footer .bottom-footer a {
+      font-family: "PTSans";
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: normal; } }
 
 .services-page {
   padding-bottom: 50px;
@@ -1072,9 +1212,13 @@ footer {
     letter-spacing: normal;
     color: #00ad5d;
     margin-top: 60px; }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      .blog-page h2 {
+        font-size: 42px;
+        text-align: center; } }
     @media screen and (max-width: 575px) {
       .blog-page h2 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center; } }
   .blog-page .news-col {
     margin-top: 90px; }
@@ -1355,9 +1499,13 @@ footer {
     letter-spacing: normal;
     color: #00ad5d;
     padding: 56px 0; }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      #contacts-page h1 {
+        font-size: 42px;
+        text-align: center; } }
     @media screen and (max-width: 575px) {
       #contacts-page h1 {
-        font-size: 36px;
+        font-size: 32px;
         text-align: center; } }
     @media screen and (max-width: 576px) {
       #contacts-page h1 {

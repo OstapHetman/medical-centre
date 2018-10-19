@@ -43,4 +43,53 @@
       }
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    h2 {
+      font-size: 45px;
+    }
+    form {
+      input[type="submit"] {
+        font-size: 22px;
+        padding: 12px 25px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    h2 {
+      padding-bottom: 40px;
+      font-size: 36px;
+    }
+    form {
+      input[type="submit"] {
+        margin-top: 30px;
+        font-size: 22px;
+        padding: 12px 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    h2 {
+      padding-bottom: 25px;
+      font-size: 23px;
+    }
+    form {
+      input[type="submit"] {
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 10px 10px;
+      }
+      input[type="text"] {
+        @include font("LatoRegular", 13px, 300, 0.75px);
+        &::placeholder {
+          @include font("LatoRegular", 13px, 300, 0.75px);
+        }
+      }
+    }
+  }
 }
