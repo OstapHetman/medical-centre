@@ -2,7 +2,7 @@
 
 ![Brand](brand.png)
 
-It's HTML template for Wordpress custom theme.
+It's HTML template for Wordpress custom theme and Wordpress theme.
 
 ## Getting start
 
@@ -27,6 +27,7 @@ npm run start
 ## Author
 
 - **Ostap Hetman** - _HTML Template_
+- **Ostap Hetman** - _Wordpress Theme_
 
 ## Licence
 
